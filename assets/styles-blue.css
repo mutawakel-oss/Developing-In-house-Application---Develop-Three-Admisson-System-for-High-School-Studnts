@@ -1,0 +1,605 @@
+﻿body 
+{
+	margin:0px;
+	background-image:url('tempGray.jpg');
+	text-align:center;
+	font-family:tahoma;
+	font-size:8pt;
+}
+
+.mainTable
+{
+	text-align:left;
+	width:1000px;
+	height:100%;
+	/*background-image:url('tempYellowGray.jpg');*/
+	background-color:#e9f2f7;
+
+	border-color: #076cac;/*979797*/
+	border-style:solid;
+	border-width:0px 1px 0px 1px;
+}
+
+
+.topMenu
+{
+	background-image:url('topMenu.jpg');
+	height:27px;
+	width:100%;
+}
+
+.topBanner
+{
+	width:100%;
+	height:221px;/*194*/
+	background-image:url('topBanner1.jpg');
+	border-bottom:2px solid #336193;
+}
+
+.topMenuContainer
+{
+	padding-left:93px;
+	display:inline-block;
+	height:28px;
+	float:right;
+	background:url('menuItemEnd.png') no-repeat left top;
+}
+.topMenu2
+{
+	/*background-image:url('blackback.png');	*/
+	height:28px;
+	width:100%;
+	position:relative;
+	float:right;
+	top:193px;/*166*/
+	
+	/*border:solid #0b0c4d;
+	border-width:1px 0px 1px 0px;*/
+}
+
+.mainContent
+{
+	text-align:right;
+	direction:rtl;
+	background-image:url('clg/1.png');
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	
+}
+
+.mainMenu
+{
+	height:296px;
+	width:159px;
+}
+
+.mainMenuContent
+{
+	height:100%;
+	border:solid black;
+	border-width:0px 1px 0px 1px;
+	background:url('tempGray2.jpg');
+	margin-right:6px;
+	text-align:center;
+	padding:8px 0px 8px 8px;
+}
+
+.mainMenuBottom
+{
+	margin-left:-1px;
+	height:26px;
+	width:159px;
+	background:url('menuBottom.png') no-repeat;
+}
+
+.mainMenuButton
+{
+	height:28px;
+	width:130px;
+	background:url('menuItem.png') no-repeat;
+	border-style:none;
+	font-family:tahoma;
+	font-size:10pt;
+	font-weight:bold;
+	cursor:hand;
+	color:#ffffff;
+}
+
+
+.mainMenuButton:hover
+{
+	background:url('menuItem2.png') no-repeat;
+	color:#0b0c4d;
+}
+
+.button
+{
+	height:28px;
+	width:124px;
+	background:url('button.png') no-repeat;
+	border-style:none;
+	font-family:tahoma;
+	font-size:10pt;
+	font-weight:bold;
+	cursor:hand;
+	color:#ffffff;
+}
+
+.button[disabled=disabled], .buttondisabled
+{
+	background:url('buttondisabled.png') no-repeat;
+	color:#ffffff;
+}
+
+
+.button:hover
+{
+	background:url('button2.png') no-repeat;
+	color:#0b0c4d;
+	cursor:;
+}
+
+.button:hover[disabled=disabled], .buttondisabled:hover
+{
+	background:url('buttondisabled.png') no-repeat;
+	color:#ffffff;
+	cursor:auto;
+}
+
+.content
+{
+	background:url('logoBack.png') no-repeat center;
+	padding:5px;
+	width:100%;
+}
+
+.bottomSitter
+{
+	
+	/*background-image:url('sitter.png');*/
+	width:115px;
+	height:137px;
+	margin-left:15px;
+}
+
+.bottomMenu
+{
+	height:29px;
+	width:1004px;	
+}
+
+.bottomMenu table
+{
+	padding:0px;
+	margin-left:-1px;
+	width:100%;
+}
+
+
+.bottomMenuLeft
+{
+	background-image:url('bottomMenuLeft.png');
+	height:29px;
+	width:10px;
+}
+
+.bottomMenuCenter
+{
+	background-image:url('bottomMenuCenter.png');
+	text-align:center;
+	height:29px;
+	width:982px;
+	color:White;
+}
+
+.bottomMenuRight
+{
+	background-image:url('bottomMenuRight.png');
+	height:29px;
+	width:10px;
+}
+
+.loginPanel
+{
+	border:1px solid black;
+}
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #8FBC8B ;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+/*Cascading DropDown*/
+
+/*CollapsiblePanel*/
+.collapsePanel {
+	
+	
+	 width:810px;
+	 padding-right:10px;
+	 text-align:right;
+	/*border:solid black;
+	border-width:0px 1px 1px 1px;*/
+}
+
+.collapsePanelHeader{	
+	width:100%;		
+	height:30px;
+	background-image: url("~/assets/ajax_images/collaped_panel_back.png");
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+#master_content .collapsePanelHeader a {color:#FFF;}
+#master_content .collapsePanelHeader a:hover {text-decoration:none;background:none;}
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+.sampleStyleA {
+	background-color:#FFF;
+}
+
+.sampleStyleB {
+	background-color:#FFF;
+	font-family:monospace;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.sampleStyleC {
+	background-color:#ddffdd;
+	font-family:sans-serif;
+	font-size:10pt;
+	font-style:italic;
+}
+
+.sampleStyleD {
+	background-color:Blue;
+	color:White;
+	font-family:Arial;
+	font-size:10pt;
+}
+
+.collapsePanelHeader
+{
+	/*border:1px solid #465760;*/
+	width:832px;
+}
+font.titleFont
+{
+	font-family:Traditional Arabic;
+	font-weight:bold;
+}
+
+.white10
+{
+	background:url('white10.png');
+}
+
+.white20
+{
+	/*background:url('white20.png');*/
+}
+
+.pad10
+{
+	padding:10px;
+}
+
+.border1black
+{
+	border: 1px solid black;
+}
+
+
+.pane
+{
+	height:100%;
+}
+
+.paper
+{
+	background:url('paper.png');
+	width: 20px;
+	height:100%;
+}
+
+.paperext
+{
+	background:#EBCC73;
+	width:620px;
+	height:380px;
+}
+
+.paperext h2
+{
+	text-align:center;
+	font-size:18pt;
+	color:#985412;
+	font-family:"Traditional Arabic";
+}
+.contentContainer
+{
+	border-right: 3px solid #999999;
+	border-bottom: 3px solid #999999;
+}
+
+#blueLoginPanel
+{
+	width:234px;
+	padding:8px;
+	padding-top:45px;
+	background:url('loginBack.png') no-repeat;
+	height:124px;
+	margin-bottom:5px;
+	
+}
+.loginLabel
+{
+	
+}
+.loginInput
+{
+	padding-left:0px;
+	padding-right:5px;
+}
+
+.username, .password
+{
+	width:123px;
+	height:18px;
+	
+	border:0px solid transparent;
+	background-repeat:no-repeat;
+	padding-right:15px;
+	padding-left:3px;
+}
+
+.username
+{
+	font-size:11px;
+	line-height:14px;
+	background-image:url('username.png');
+}
+.password
+{
+	background-image:url('password.png');
+}
+
+.loginButton
+{
+	background: url('loginButton.png');
+	border:none;
+	width:55px;
+	height:20px;
+}
+
+.loginButton:hover
+{
+	background:url('loginButtonOver.png');
+}
+.leftPane
+{
+	padding-right:10px;
+	width:250px;
+}
+
+
+.advTable
+{
+	background-image:url('adv.png');
+	width:240px;
+	height:155px;
+	padding-top:45px;
+	padding-right:10px;
+}
+
+#mrqAds
+{
+	font-size:9pt;
+	color:#0b0c4d;
+	height:130px;
+	width:235px;
+}
+.collegeChoicesTable
+{
+	padding-top:22px;
+	text-align:right;
+	background-image:url('collegeChoicesBack.png');
+	margin-top:5px;
+	width:731px;
+	height:115px;
+}
+
+.top5
+{
+	margin-top:8px;
+}
+
+table.msg
+{
+	width:731px;
+	direction:rtl;
+}
+table.msg .header
+{
+	height:32px;
+	width:731px;
+	background:url('msg_01.png');
+}
+
+table.msg .leftBorder
+{
+	width:10px;
+	background:url('msg_02.png');
+}
+
+table.msg .msgBody
+{
+	width:711px;
+	padding-top:14px;
+	background:white;
+	vertical-align:top;
+	text-align:justify;
+	direction:rtl;
+	line-height:18px;
+	font-size:12px;
+}
+
+table.msg .rightBorder
+{
+	background:url('msg_04.png');
+	width:10px;
+}
+
+
+table.msg .leftBottomCorner
+{
+	width:10px;
+	height:25px;
+	background:url('msg_05.png');
+}
+table.msg .bottomCorner
+{
+	width:711px;
+	height:25px;
+	background:url('msg_06.png');
+}
+table.msg .rightBottomCorner
+{
+	width:10px;
+	height:25px;
+	background:url('msg_07.png');
+}
+.fontFamilyClass
+{
+	font-family:'Traditional Arabic','tahoma';
+	font-size:13pt;
+    font-weight:bold;
+
+}
+.RegistrationTableCol
+{
+	 width:120px;
+}
+
+.tabTable 
+{
+	width:800px;
+
+}
+
+.col2
+{
+	width:800px;
+}
+
+.col3
+{
+	width:400px;
+}
+
+.tabTable td
+{
+	width:25%;
+	
+}
+
+.conditionsTable, .gpaTable 
+{
+	border: 1px solid #076cac;
+}
+.conditionsTable td, .gpaTable td
+{
+	border: 1px solid;
+	border-color: #A4BCCC #076cac;
+	padding:2px 12px;
+	text-align:justify;
+}
+.conditionsTable tr.conditionsHeader td
+{
+	background: url('topMenu3.jpg') repeat-x;
+	color: #eee;
+	font-size:1.6em;
+	height:23px;
+	line-height:1.3em;
+	font-weight:bolder;
+	border: 1px solid #076cac;
+}
+
+
+a.collegeName
+{
+	position:absolute;
+	left:50%;
+	margin-left:-501px;
+	top:0px;
+	
+	
+	height:28px;
+	border-style:none;
+	font-family:tahoma;
+	line-height:18px;
+	
+	font-size:10pt;
+	font-weight:bold;
+	color:#ffffff;
+	
+	padding:5px 0 0;
+	
+	background: url('topMenu1.jpg') repeat-x;
+	display:inline-block;
+	
+}
+.tblAgreementStyle
+{
+	 text-align:right;
+	 
+}
+.agreementStyle
+{
+	color:Red;
+	font-size:12px;
+}

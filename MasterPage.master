@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" CodeFile="MasterPage.master.cs" Inherits="MasterPage_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="HeadElement" runat="server">
+    <title>جامعة الملك سعود بن عبدالعزيز للعلوم الصحية - نظام التسجيل الإلكتروني</title>
+    <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" />
+    <link type="text/css" rel="Stylesheet" href="assets/styles-blue.css" />
+</head>
+<body>
+    <center>
+        <form id="frmScript" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div class='mainTable'>
+            <!--<div class="topMenu">
+            </div>-->
+            <!-- القائمة السوداء العلوية-->
+            <div class="topBanner" >
+                <div class="topMenu2"  >
+                    <div align="right" dir='rtl'><div class='topMenuContainer' ><asp:ContentPlaceHolder ID="mainMenuContent" runat="server"></asp:ContentPlaceHolder></div>
+						<asp:LinkButton CausesValidation=false ForeColor=White Visible=false ID="LinkButton1" Text="تسجيل الخروج" runat="server" OnClick="Logout"></asp:LinkButton>
+						<asp:HyperLink runat="server"  CssClass="collegeName" ID="GlobalCollegeName" runat="server" ></asp:HyperLink>
+                    </div>
+					
+                    <asp:Table runat="server" ID="HeaderTable" Width="100%" align="rtl">
+                        <asp:TableRow>
+                            <asp:TableCell>
+                                
+                            </asp:TableCell>
+                            <asp:TableCell>
+                                
+                            </asp:TableCell>
+                        </asp:TableRow>
+                    </asp:Table>
+                </div>
+            </div>
+            <!-- البانر العلوي -->
+            <table class="mainContent" cellpadding="0" cellspacing="0" border="0" width="1000">
+                <tr>
+                    <%--<td class="mainMenu" valign="top">
+                        <div class="mainMenuContent">
+                            <asp:ContentPlaceHolder ID="mainMenuContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="mainMenuBottom">
+                        </div>
+                        &nbsp;
+                    </td>--%>
+					
+					
+                    <td class="content" valign="top">
+					
+                        <asp:ContentPlaceHolder ID="content" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" ShowStartingNode="false" />
+						
+        
+					</td> 
+				</tr> 
+			</table>
+        </div>
+        <div class="bottomMenu">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="bottomMenuLeft">
+                    </td>
+                    <td class="bottomMenuCenter">
+                        تطوير : جامعة الملك سعود بن عبدالعزيز للعلوم الصحية 2010 &copy; - فريق تقانة المعلومات
+                        بكلية الطب
+                    </td>
+                    <td class="bottomMenuRight">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </center>
+</body>
+</html>
